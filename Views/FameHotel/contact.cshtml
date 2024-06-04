@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fame Hotel Contact</title>
+</head>
+
+<body>
+    <!-- Banner Alanı -->
+
+    <div id="headertopcontact">
+        <picture>
+            <!-- Büyük ekranlar için resim -->
+            <source media="(min-width: 768px)" srcset="/images/desktop/Contact/contactBanner.png">
+            <!-- Küçük ekranlar için resim -->
+            <img src="/images/mobile/contact/contactBanner.png" alt="Accommodation Banner" style="width: 100%;">
+        </picture>
+    </div>
+
+    <!-- Contact Content -->
+
+    <section id="contactcontent" class="py-5">
+        <div class="container">
+            <h1 class="text-center pb-4">Contact Information</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe class="iframe h-100 w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.973880069006!2d30.563633525829218!3d36.60293812230402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b79970784781%3A0xc1b7d6dec813926f!2sFame%20Residence%20Kemer%20%26%20Spa!5e0!3m2!1sen!2str"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center">Address | Fame Residence Hotel & Spa</h3>
+                    <p class="text-center">Karabağlar Mahallesi Deniz Caddesi No:15/2 Merkez/Kemer/Antalya</p>
+                    <p class="text-center">Phone Number: 0242 554 85 86</p>
+                    <hr />
+                    <h3 class="text-center">Contact Us</h3>
+                    <form action="#" method="post">
+                        <div class="form-group py-2">
+                            <label for="name">Name and Surname</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group py-2">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group py-2">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone"
+                                   placeholder="Format: 530 216 9674" required>
+                        </div>
+
+                        <div class="form-group py-2">
+                            <label for="message">What You Want to Send Us</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group py-2 text-end">
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form submission to server
+            alert('Your message has been sent.'); // Show alert pop-up
+        }
+    </script>
+</body>
+</html>

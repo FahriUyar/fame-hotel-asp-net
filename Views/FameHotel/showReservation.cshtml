@@ -1,0 +1,306 @@
+﻿@model Fame_Hotel.Models.Reservation
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fame Hotel Reservation</title>
+
+    <link rel="stylesheet" href="/style/showReservation.css">
+ 
+</head>
+
+<body>
+
+  
+    <!-- Banner Alanı -->
+
+    <div id="headertopreservation">
+        <picture>
+            <!-- Büyük ekranlar için resim -->
+            <source media="(min-width: 768px)" srcset="/images/desktop/accomodation/accomodationBanner.png">
+            <!-- Küçük ekranlar için resim -->
+            <img src="/images/mobile/accomodation/accomodationBanner.png" alt="Accommodation Banner"
+                 style="width: 100%;">
+        </picture>
+    </div>
+
+    <!-- Oda bilgilerinin yer aldığı kısım -->
+
+    <section id="Rooms">
+
+        <h2 class="text-center py-4">Select a Room</h2>
+
+        <!-- Standart Room -->
+        <div class="container  py-4">
+            <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                    <div>
+                        <img class="sliderimg1" src="/images/desktop/accomodation/Standart Room/comfort_standart3.jpg"
+                             alt="Standart Room">
+                        <div class="arrowButton pt-2">
+                            <i onclick="back1()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                </svg>
+                            </i>
+                            <i onclick="next1()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <h3 class="text-center">Standard Room</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">50 m²</li>
+                                <li class="roomfeatures">Parquet Floor</li>
+                                <li class="roomfeatures">French or Twin beds</li>
+                                <li class="roomfeatures">1 bedroom</li>
+                                <li class="roomfeatures">Balcony</li>
+                                <li class="roomfeatures">LCD TV</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">Nespresso Coffee Machine</li>
+                                <li class="roomfeatures">Mini Bar</li>
+                                <li class="roomfeatures">Hair Dryer</li>
+                                <li class="roomfeatures">Split AC</li>
+                                <li class="roomfeatures">Wi-Fi</li>
+                                <li class="roomfeatures">Phone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 text-center">
+                    <div class="price-container">
+                        <p>Ultra All Inclusive</p>
+                        <p>Only</p>
+                        <h2 class="price">1989$</h2>
+                        <button type="submit" class="btn btn-outline-dark bg-secondary"
+                                onclick="location.href='/FameHotel/reservation'">
+                            Reserve Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elite Standart Room -->
+        <div class="container  py-4">
+            <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                    <div>
+                        <img class="sliderimg2"
+                             src="/images/desktop/accomodation/Elite Standart Room/elite_standart1.jpg"
+                             alt="Elite Standart Room">
+                        <div class="arrowButton pt-2">
+                            <i onclick="back2()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                </svg>
+                            </i>
+                            <i onclick="next2()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <h3 class="text-center">Elite Standard Room</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">75 m²</li>
+                                <li class="roomfeatures">Parquet Floor</li>
+                                <li class="roomfeatures">French or Twin beds</li>
+                                <li class="roomfeatures">2 bedrooms</li>
+                                <li class="roomfeatures">Balcony</li>
+                                <li class="roomfeatures">LCD TV</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">Nespresso Coffee Machine</li>
+                                <li class="roomfeatures">Mini Bar</li>
+                                <li class="roomfeatures">Hair Dryer</li>
+                                <li class="roomfeatures">Split AC</li>
+                                <li class="roomfeatures">Wi-Fi</li>
+                                <li class="roomfeatures">Phone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 text-center">
+                    <div class="price-container">
+                        <p>Ultra All Inclusive</p>
+                        <p>Only</p>
+                        <h2 class="price">2050$</h2>
+                        <button type="submit" class="btn btn-outline-dark bg-secondary"
+                                onclick="location.href='/FameHotel/reservation'">
+                            Reserve Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Family Room -->
+        <div class="container  py-4">
+            <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                    <div>
+                        <img class="sliderimg3" src="/images/desktop/accomodation/Family Room/comfort_quad1 (1).jpg"
+                             alt="Family Room">
+                        <div class="arrowButton pt-2">
+                            <i onclick="back3()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                </svg>
+                            </i>
+                            <i onclick="next3()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <h3 class="text-center">Family Room</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">95 m²</li>
+                                <li class="roomfeatures">Parquet Floor</li>
+                                <li class="roomfeatures">French or Twin beds</li>
+                                <li class="roomfeatures">2 bedrooms</li>
+                                <li class="roomfeatures">Balcony</li>
+                                <li class="roomfeatures">LCD TV</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">Nespresso Coffee Machine</li>
+                                <li class="roomfeatures">Mini Bar</li>
+                                <li class="roomfeatures">Hair Dryer</li>
+                                <li class="roomfeatures">Split AC</li>
+                                <li class="roomfeatures">Wi-Fi</li>
+                                <li class="roomfeatures">Phone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 text-center">
+                    <div class="price-container">
+                        <p>Ultra All Inclusive</p>
+                        <p>Only</p>
+                        <h2 class="price">2480$</h2>
+                        <button type="submit" class="btn btn-outline-dark bg-secondary"
+                                onclick="location.href='/FameHotel/reservation'">
+                            Reserve Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comfort Swim Up Room -->
+        <div class="container  py-4">
+            <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                    <div>
+                        <img class="sliderimg4"
+                             src="/images/desktop/accomodation/Comfort Swim up Room/comfort_Swim-up1.jpg"
+                             alt="Comfort Swim Up Room">
+                        <div class="arrowButton pt-2">
+                            <i onclick="back4()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                </svg>
+                            </i>
+                            <i onclick="next4()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <h3 class="text-center">Comfort Swim Up Room</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">125 m²</li>
+                                <li class="roomfeatures">Parquet Floor</li>
+                                <li class="roomfeatures">French or Twin beds</li>
+                                <li class="roomfeatures">2 bedrooms</li>
+                                <li class="roomfeatures">Balcony</li>
+                                <li class="roomfeatures">LCD TV</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="room-features">
+                                <li class="roomfeatures">Nespresso Coffee Machine</li>
+                                <li class="roomfeatures">Mini Bar</li>
+                                <li class="roomfeatures">Hair Dryer</li>
+                                <li class="roomfeatures">Split AC</li>
+                                <li class="roomfeatures">Wi-Fi</li>
+                                <li class="roomfeatures">Phone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 text-center">
+                    <div class="price-container">
+                        <p>Ultra All Inclusive</p>
+                        <p>Only</p>
+                        <h2 class="price">3200$</h2>
+                        <button type="submit" class="btn btn-outline-dark bg-secondary"
+                                onclick="location.href='/FameHotel/reservation'">
+                            Reserve Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Framework Library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="/app/reservation.js"></script>
+
+</body>
+<</html>

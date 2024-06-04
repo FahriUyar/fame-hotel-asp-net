@@ -1,0 +1,26 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0px;
+    margin-right: 2rem;
+}
+
+.flex-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom:  2rem;
+}

@@ -1,0 +1,13 @@
+﻿.roomfeatures {
+    padding-left: 20px;
+    text-shadow: 1px 1px 2px var(--primary);
+}
+
+#accommodationcontent img {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.col-md-6 {
+    align-items: center;
+}

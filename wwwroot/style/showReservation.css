@@ -1,0 +1,51 @@
+﻿/* Rooms */
+
+.sliderimg1, .sliderimg2, .sliderimg3, .sliderimg4 {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    /* Bu, resmin orantısını koruyarak kutuya sığmasını sağlar */
+}
+
+
+.room-container {
+    margin: 20px 0;
+}
+
+.room-features {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+    .room-features li {
+        margin-bottom: 5px;
+    }
+
+.price {
+    font-size: 2rem;
+    color: #333;
+}
+
+.arrowButton {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin: 10px auto;
+}
+
+
+@media (max-width: 768px) {
+    .arrowButton {
+        width: 60px;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+}
+
+.price-container {
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+}

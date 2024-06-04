@@ -1,0 +1,108 @@
+﻿@model Fame_Hotel.Models.Reservation;
+
+
+<html>
+<head>
+
+    <title>Fame Hotel | Reservation</title>
+    <link rel="stylesheet" href="/style/reservation.css">
+
+</head>
+ <body>
+
+    <!-- Banner Alanı -->
+
+    <div>
+        <picture>
+            <!-- Büyük ekranlar için resim -->
+            <source media="(min-width: 768px)" srcset="/images/desktop/Home/beachBanner.png">
+            <!-- Küçük ekranlar için resim -->
+            <img src="/images/banner1.jpg" alt="Accommodation Banner"
+                 style="width: 100%; height: 400px;">
+        </picture>
+    </div>
+
+    <!-- Reservation Information -->
+
+    <section id="reservationForm">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center my-5">Fame Hotel Reservation</h1>
+                </div>
+            </div>
+            <form class="row" id="contactForm" asp-controller="FameHotel" asp-action="CreateReservation" method="post">
+                <!-- Form Fields -->
+                <div class="col-6 col-md-3 px-3">
+                    <div class="mb-3">
+                        <label asp-for="EntryDate" class="control-label">Entry Date</label>
+                        <input asp-for="EntryDate" type="date" class="form-control" />
+                        <span asp-validation-for="EntryDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 px-3">
+                    <div class="mb-3">
+                        <label asp-for="ExitDate" class="control-label">Exit Date</label>
+                        <input asp-for="ExitDate" type="date" class="form-control" />
+                        <span asp-validation-for="ExitDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 px-3">
+                    <div class="mb-3">
+                        <label for="adultCount">Adult Number</label>
+                        <select asp-for="AdultCount" class="form-control" id="adultCount">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 px-3">
+                    <div class="mb-3">
+                        <label for="childCount">Child Number</label>
+                        <select asp-for="ChildCount" class="form-control" id="childCount">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  px-3">
+                    <label asp-for="FirstName" class="control-label">First Name</label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="col-12 col-md-6  px-3">
+                    <label asp-for="LastName" class="control-label">Last Name</label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+                <div class="col-12 col-md-6 mb-3 px-3">
+                    <label asp-for="BirthDate" class="control-label">Birth Of Date</label>
+                    <input asp-for="BirthDate" class="form-control" placeholder="MM/DD/YYYY" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+                <div class="col-12 col-md-6 mb-3 px-3">
+                    <label asp-for="Email" class="control-label">E-mail</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-12 col-md-6 mb-3 px-3">
+                    <label asp-for="PhoneNumber" class="control-label">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control" id="phoneInput" placeholder="544 770 ****" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="col-12 col-md-6 mb-3 px-3">
+                    <label asp-for="City" class="control-label">City</label>
+                    <input asp-for="City" class="form-control" placeholder="Country/City" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="my-5 d-block mx-auto">
+                    <button type="submit" value="CreateReservation" class="btn btn-primary">Make Reservation</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
